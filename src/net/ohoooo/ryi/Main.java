@@ -74,7 +74,7 @@ public class Main {
 			meta.setFromTree(format, root);
 			writer.writeToSequence(new IIOImage(originalImage, null, meta), null);
 
-			for (int i = 0; i < 360; i += 15) {
+			for (int i = 15; i < 360; i += 15) {
 				System.out.println(i);
 
 				node = new IIOMetadataNode("GraphicControlExtension");
